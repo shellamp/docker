@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My first dynamic Website</title>
+    <title>Sheilla Assignment</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
-
-<body>
+<body> 
     <main>
+        <a href="https://www.hwr-berlin.de/">To HWR Homepage</a>
         <h1>I have been seen {{ count }} times.</h1>
         <ul>
             {% for i in range(1, count+1) %}
@@ -17,6 +16,17 @@
             {% endfor %}
         </ul>
     </main>
+        <div>
+        <img src="{{url_for('static', filename='IMG_8269.jpg')}}"/>
+    </div>
+    <nav>
+        <a href="/">Home</a> 
+        <a href="/titanic">Titanic</a> 
+        <a href="https://github.com/shellamp">Github </a> 
+    </nav>
+    <footer>
+        <p>Author: Sheilla Purwandiary</p>
+    </footer>
 </body>
 
 </html>

@@ -1,2 +1,5 @@
 Flask
 Redis
+python-dotenv
+Pandas
+matplotlib
