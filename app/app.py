@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 
 load_dotenv() 
-cache = redis.Redis(host='redis', port=6379)
+cache = redis.Redis(host=os.getenv('REDIS_HOST'), port=6379,  password=os.getenv('REDIS_PASSWORD'))
 app = Flask(__name__)
 
 titanic_df = pd.read_csv("Titanic-Dataset_XGboost.csv")
